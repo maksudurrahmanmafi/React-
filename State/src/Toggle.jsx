@@ -15,6 +15,7 @@ export default function ShowHideText() {
         {isVisible ? 'Hide' : 'Show'} Text
       </button>
       {isVisible && <p>This is the text that can be shown or hidden.</p>}
+      {!isVisible && <p>The text is currently hidden.</p>}
     </div>
   );
 }
