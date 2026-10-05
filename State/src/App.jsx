@@ -1,5 +1,6 @@
 import  { useState } from "react";
 import Toggle from "./Toggle";
+import DataFromApi from "./DataFromApi";
 
 const App = () => {
   const [Score,setScore] = useState(0);
@@ -32,6 +33,7 @@ const App = () => {
       <button onClick={handleScoreDecrease}> -1</button>
       <button onClick={handleReset}>RESET</button>
       <Toggle></Toggle>
+      <DataFromApi></DataFromApi>
     </div>
   );
 };
