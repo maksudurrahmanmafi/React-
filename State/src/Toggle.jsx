@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+
+
 export default function ShowHideText() {
   // 1. Initialize state to track visibility
   const [isVisible, setIsVisible] = useState(false);
@@ -11,7 +13,9 @@ export default function ShowHideText() {
 
   return (
     <div>
-      <button onClick={handleToggle}>
+      <input type="file" className="file-input file-input-success" />
+
+      <button className="btn btn-primary" onClick={handleToggle}>
         {isVisible ? 'Hide' : 'Show'} Text
       </button>
       {isVisible && <p>This is the text that can be shown or hidden.</p>}

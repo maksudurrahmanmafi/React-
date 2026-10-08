@@ -72,6 +72,8 @@ const DataFromApi = ({ api }) => {
           );
         })}
       </div>
+
+
     </>
   );
 };
