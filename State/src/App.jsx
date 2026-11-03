@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Toggle from "./Toggle";
-import DataFromApi from "./DataFromApi";
-
+import DataFromApi from "./Componets/DataFromApi";
+          
 const api = fetch("https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json());
 
@@ -15,6 +15,9 @@ const App = () => {
   const handleScoreDecrease = () => {
     setScore(score - 1);
   };
+  const handleScoreIncreaseSix = () => {
+    setScore(score + 6);
+  };
 
   const handleReset = () => {
     setScore(0);
@@ -24,8 +27,9 @@ const App = () => {
     <div>
       <h2>Total Score: {score}</h2>
 
-      <button onClick={handleScoreIncrease}>+1</button>
+      <button className="btn text-2xl p-4 mx-1 btn-primary rounded-2xl" onClick={handleScoreIncrease}>+1</button>
       <button onClick={handleScoreDecrease}>-1</button>
+      <button onClick={handleScoreIncreaseSix}>+6</button>
       <button onClick={handleReset}>RESET</button>
 
       <Toggle />
