@@ -28,9 +28,9 @@ const App = () => {
       <h2>Total Score: {score}</h2>
 
       <button className="btn text-2xl p-4 mx-1 btn-primary rounded-2xl" onClick={handleScoreIncrease}>+1</button>
-      <button onClick={handleScoreDecrease}>-1</button>
-      <button onClick={handleScoreIncreaseSix}>+6</button>
-      <button onClick={handleReset}>RESET</button>
+      <button className="btn text-2xl p-4 mx-1 btn-primary rounded-2xl" onClick={handleScoreDecrease}>-1</button>
+      <button className="btn text-2xl p-4 mx-1 btn-primary rounded-2xl" onClick={handleScoreIncreaseSix}>+6</button>
+      <button className="btn text-2xl p-4 mx-1 btn-primary rounded-2xl" onClick={handleReset}>RESET</button>
 
       <Toggle />
 
